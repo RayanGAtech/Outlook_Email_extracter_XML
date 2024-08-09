@@ -1,31 +1,40 @@
-Email Extractor Service
-Overview
-A Python-based Windows service that automatically extracts email bodies with the subject "Sent from AirCentre Movement Manager" from Microsoft Outlook. The extracted content is saved as XML files in the MQIN directory, with each file uniquely named for easy access.
+<h1>📨 Email Extractor Service</h1>
 
-Features
-Automated extraction of specific emails.
-Continuous operation as a Windows service.
-Organized file storage with unique naming conventions.
-Installation
-Clone the Repo:
+<h2>📄 Overview</h2>
+<p>A Python-based Windows service that automatically extracts email bodies with the subject <strong>"Sent from AirCentre Movement Manager"</strong> from Microsoft Outlook and saves them as XML files in the <code>MQIN</code> directory.</p>
 
-bash
-Copy code
-git clone https://github.com/your-username/email_extractor_project.git
+<h2>🚀 Features</h2>
+<ul>
+  <li><strong>Automated Extraction:</strong> Automatically processes specific emails.</li>
+  <li><strong>Runs as a Service:</strong> Operates continuously in the background.</li>
+  <li><strong>Organized Storage:</strong> Saves files with unique names for easy access.</li>
+</ul>
+
+<h2>⚙️ Installation</h2>
+<ol>
+  <li><strong>Clone the Repository:</strong>
+    <pre><code>git clone https://github.com/your-username/email_extractor_project.git
 cd email_extractor_project
-Install Dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Install and Start the Service:
-
-bash
-Copy code
-python email_extractor_service.py install
+</code></pre>
+  </li>
+  <li><strong>Install Dependencies:</strong>
+    <pre><code>pip install -r requirements.txt</code></pre>
+  </li>
+  <li><strong>Install and Start the Service:</strong>
+    <pre><code>python email_extractor_service.py install
 python email_extractor_service.py start
-Usage
-The service runs in the background, extracting and saving relevant emails as XML files in the MQIN folder.
+</code></pre>
+  </li>
+</ol>
 
-Management
-Use the batch scripts in the setup/ directory to install, start, stop, or uninstall the service.
+<h2>🛠️ Usage</h2>
+<p>The service extracts emails and saves them as XML files in the <code>MQIN</code> folder.</p>
+
+<h2>📂 Management</h2>
+<p>Use the scripts in the <code>setup/</code> directory to manage the service:</p>
+<ul>
+  <li><strong>Install:</strong> <code>install_service.bat</code></li>
+  <li><strong>Start:</strong> <code>start_service.bat</code></li>
+  <li><strong>Stop:</strong> <code>stop_service.bat</code></li>
+  <li><strong>Uninstall:</strong> <code>uninstall_service.bat</code></li>
+</ul>
